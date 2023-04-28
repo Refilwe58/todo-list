@@ -1,0 +1,14 @@
+<p>edit works!</p>
+<div class="main-section">
+    <div class="add-section">
+        <H1>Update</H1>
+        <form [formGroup]="editGroup" (ngSubmit)="submit() " autocomplete="off">
+            <input type="text" placeholder=" Title " name="task_title" formControlName="task_title" [(ngModel)]="taskObj.task_title" />
+            <input type=" text " placeholder=" What do you need to do? " name="task_description " formControlName="task_description" [(ngModel)]="taskObj.task_description " />
+            <button class=" add " type="submit " data-bs-dismiss=" modal " *ngIf="id" (click)=" submit() ">Update </button>
+
+
+
+        </form>
+    </div>
+</div>
